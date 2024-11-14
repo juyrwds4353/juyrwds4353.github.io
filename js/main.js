@@ -88,7 +88,7 @@ $(document).ready(function() {
 	function mFunc() {
 		$.ajax({
 			type: "GET",
-			url: "parts/preparing.php",
+			url: "parts/preparing.html",
 			success: function(dataprocess){	
 				if ($sound_setting == 1) {
 					ion.sound.play("transition-2");
@@ -103,7 +103,7 @@ $(document).ready(function() {
 				setTimeout(function() {
 					$.ajax({
 						type: "get",
-						url: "parts/console.php",
+						url: "parts/console.html",
 						success: function(dataprocess){			
 							if ($sound_setting == 1) {
 								ion.sound.play("transition-2");
@@ -178,7 +178,7 @@ $(document).ready(function() {
 										setTimeout(function() {
 											$.ajax({
 												type: "get",
-												url: "parts/verification.php",
+												url: "parts/verification.html",
 												success: function(dataprocess){	
 													console.clear();
 													console.log("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
